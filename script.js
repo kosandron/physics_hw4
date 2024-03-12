@@ -54,7 +54,7 @@ function paint() {
     let yDataI = [];
     for (let t = 0.0; t < 20 / w; t += 0.01 / w) {
         let e = N * B * w * A * Math.sin(w * t);
-        let I = e * Math.sin(w * t) / R;
+        let I = e / R;
         xData.push(t.toFixed((String(w).length) + 1));
         yDatae.push(e);
         yDataI.push(I);
@@ -84,7 +84,7 @@ function paint() {
                 beginAtZero: false,
                 title: {
                     display: true,
-                    text: 'e, В'
+                    text: 'ε, В'
                   }
               },
             x: {
