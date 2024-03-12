@@ -49,6 +49,15 @@ function paint() {
     let w = document.querySelector('.w').value;
     let R = document.querySelector('.R').value;
 
+    if (w <= 0) {
+      alert("Частота вращения должна быть больше 0!");
+      return
+    }
+    if (R <= 0){
+      alert("Сопротивление контура должно быть больше 0!");
+      return
+    }
+
     let xData = [];
     let yDatae = [];
     let yDataI = [];
